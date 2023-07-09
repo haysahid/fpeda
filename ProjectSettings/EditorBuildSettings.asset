@@ -6,6 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Main Menu/Main Menu.unity
+    guid: 4043fd213269346d6b522d122e6cee4e
+  - enabled: 1
+    path: Assets/Scenes/Old City.unity
+    guid: 5452ff0a5b0fb46ae8344b0724dc774c
+  - enabled: 1
+    path: Assets/Scenes/Desert.unity
+    guid: 8598a5a4f0e724a779e9c2a7e6e08c8d
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 5c37f1ae816594a9085eee9ccbd2f7fd
+  - enabled: 1
+    path: Assets/Scenes/Dome.unity
+    guid: e3964ecf550fa4b4986fc4d12cfc95a8
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/CutscenePrologue.unity
+    guid: 1f6714d3e7c03412faa4b17fe40b8e4e
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Loding.unity
+    guid: cf3f036703c524f9993e86f18af54726
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Maps.unity
+    guid: 7d06f0763c53a4aecbf5a87381fd4ab7
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Prologue.unity
+    guid: 9c8d5217c4e1b4e568afb8545eb4809f
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/SampleScene.unity
+    guid: 63de0d85dba5040258b7e5fab39df6f4
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/SettingScene.unity
+    guid: 21d88b7b254f44f7591f0c84e119bce3
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/SplashScene.unity
+    guid: d94e37d972a8b4a85aafed090ddd4647
   m_configObjects: {}

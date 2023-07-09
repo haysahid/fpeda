@@ -9,12 +9,16 @@ public class PlayerMovement : MonoBehaviour
     public float jump;
     private Animator animator;
     private bool landed;
+    private GameObject[] item;
+    private Weapon weapon;
 
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        item = GameObject.FindGameObjectsWithTag("EnemyItem");
+        weapon = new Weapon();
     }
 
     // Update is called once per frame
@@ -37,7 +41,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Jumping
-        if (Input.GetKey(KeyCode.UpArrow) && landed) {
+        if (Input.GetKey(KeyCode.UpArrow) && landed)
+        {
             animator.SetBool("shooting", false);
             Jump();
         }
@@ -58,8 +63,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground") {
+        if (collision.gameObject.tag == "Ground")
+        {
             landed = true;
+        }
+
+        if (collision.gameObject.tag == "EnemyItem")
+        {
+            foreach (GameObject obj in item)
+            {
+                obj.SetActive(false);
+                weapon.quantity += 1;
+            }
+
+            Debug.Log("Collected Item");
         }
     }
 }
