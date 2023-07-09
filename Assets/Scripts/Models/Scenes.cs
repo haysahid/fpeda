@@ -11,7 +11,7 @@ public class Scenes
         "Intro", // 3
 
         // Main Menu
-        "Main Menu",
+        "Main Menu", // 4
         "Prologue",
         "CutscenePrologue",
         "SplashScene",

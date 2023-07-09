@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 using TMPro;
 
@@ -12,11 +13,17 @@ public class DialogueController : MonoBehaviour
     public string[] dialogue;
     private int index;
 
+    public string speaker;
+    public TextMeshProUGUI nameText;
+
     public GameObject contButton;
     public float wordSpeed;
 
+    CutsceneTransition cutsceneTransition = new CutsceneTransition();
+
     private void Start()
     {
+        nameText.text = speaker;
         dialogueText.text = "";
 
         dialoguePanel.SetActive(true);
@@ -60,6 +67,7 @@ public class DialogueController : MonoBehaviour
         else
         {
             zeroText();
+            cutsceneTransition.changeScene(4, false);
         }
     }
 

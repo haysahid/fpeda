@@ -6,11 +6,12 @@ public class EnemyController : MonoBehaviour
 {
 
     public Sprite idle, shoot, shooting;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,16 +24,13 @@ public class EnemyController : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = shooting;
         }
 
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = idle;
-            Invoke("collectableWeapon", 25);
+            animator.SetTrigger("epcom_shot");
+            animator.SetBool("epcom_hit", true);
+
+            //this.gameObject.GetComponent<SpriteRenderer>().sprite = idle;
         }
 
-    }
-
-    public void collectableWeapon()
-    {
-        this.gameObject.GetComponent<SpriteRenderer>().sprite = idle;
     }
 }
