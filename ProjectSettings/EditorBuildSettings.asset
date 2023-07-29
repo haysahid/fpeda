@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu/SplashScene.unity
     guid: d94e37d972a8b4a85aafed090ddd4647
+  - enabled: 1
+    path: Assets/Scenes/ControlRoom.unity
+    guid: 21d9c0c31726a4e01a4d79ca34f10511
   m_configObjects: {}

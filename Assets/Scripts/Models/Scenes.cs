@@ -12,11 +12,13 @@ public class Scenes
 
         // Main Menu
         "Main Menu", // 4
-        "Prologue",
-        "CutscenePrologue",
-        "SplashScene",
-        "Maps",
-        "SettingScene"
+        "Prologue", // 5
+        "CutscenePrologue", // 6
+        "SplashScene", // 7
+        "Maps", // 8
+        "SettingScene", // 9
+        "ControlRoom", // 10
+        "Loding", // 11
     };
 
 }
